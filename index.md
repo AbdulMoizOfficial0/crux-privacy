@@ -1,132 +1,128 @@
-# Crux: AI Resume Checker — Privacy Policy
+# Privacy Policy for Crux
 
-**Last updated: 2026-11-15**
+**Last updated:** November 19, 2026
 
-## 1. Introduction
+This Privacy Policy describes how Crux: AI Resume Checker ("Crux", "we", "us", "our", or "the app") collects, uses, and shares information when you use our Android application ("Service").
 
-Crux: AI Resume Checker ("Crux", "the app", "we", "us") is an Android app that analyzes resumes using AI, checks them for applicant tracking system (ATS) compatibility, compares them to job descriptions, and writes cover letters. The app is published on Google Play under the developer account "Qwark". Package name: `com.crux.ai.resume`.
+By using Crux, you agree to the collection and use of information in accordance with this policy.
 
-This policy explains what data the app collects, why, who receives it, how long we keep it, and what choices you have. It applies to the Crux Android app.
+---
 
-## 2. Summary
+## 1. Information We Collect
 
-- You sign in with Google. We receive your name, email, Google user ID and profile picture URL.
-- Resumes you upload are sent to Google's Gemini AI to be analyzed. We do not keep the original file.
-- We do not run ads. We do not use analytics or crash-tracking SDKs. We do not sell personal information.
-- You can ask us to send you your data or delete it by emailing us.
+### 1.1 Resume content you upload
+When you upload a resume (PDF, Word or text file) or ask Crux to write a cover letter, the file is sent from the app to our server and then to Google's Gemini AI to be analysed. **This includes everything in the file**, such as your name, contact details, work history and anything else you have written in it. Please remove sensitive identifiers (government ID numbers, bank details) before uploading.
 
-## 3. Information we collect
+We do **not** keep a copy of the uploaded file on our servers. It exists there only for the time needed to produce the result.
 
-### 3.1 Information you provide or that comes from your Google account
+### 1.2 Google Sign-In account information
+You sign in to Crux with Google Sign-In. When you do, we receive from Google your name, email address and profile picture URL, and an account identifier. Authentication is handled by Supabase (see 1.5). Crux does not offer anonymous use or email/password accounts.
 
-- **Google account details.** When you sign in with Google, we receive your Google user ID, full name, email address and profile picture URL. Supabase Auth stores these.
-- **Resume files.** PDF, Word, text files, or a photo you choose to take or select. These are sent to our server to be analyzed. See section 4 and section 6 for how they are handled.
-- **Job descriptions.** Text you paste for the ATS Match and cover letter features. This is optional.
-- **Analysis results.** Scores, feedback and improvement suggestions generated for you. We store these linked to your account. Depending on the feature, we may also store the text extracted from your resume, the job description, and generated cover letters, so you can see them again.
+### 1.3 Information stored on our servers
+Linked to your account we store:
+- How many of your free actions you have used (the free allowance is 3 actions in total)
+- The names you give your resumes inside the app
+- The results of ATS format checks you run (scores and issues found)
+- Cover letters you generate and save, together with the job description you pasted
+- Your Crux Pro subscription status: plan (monthly or yearly), status, expiry date, whether it renews, and the Google Play purchase token needed to verify it
+- Timestamps of when these records were created or updated
 
-### 3.2 Information collected automatically
+### 1.4 Data stored only on your device
+- Your analysis history (past scores and suggested improvements)
+- App preferences (theme, sound effects)
+- Onboarding status and sign-in session
 
-- **Free action counter.** The number of free actions you have used (3 free lifetime actions). Stored in our database.
-- **Subscription status.** Whether you have an active Crux Pro subscription, the subscription product (monthly or yearly), its expiry date, and the Google Play purchase token. Stored in our database.
-- **Purchase token on your device.** If a purchase cannot be verified immediately, the purchase token and product ID are temporarily saved on your device and retried later.
-- **Standard server logs.** Our hosting provider (Supabase) keeps routine technical logs, which can include IP addresses and request details. We do not use them to profile or track you.
+### 1.5 Third-party services
 
-### 3.3 Information we do NOT collect
+**Google Gemini API (resume analysis).** Your resume content, and any job description you provide, is sent to Google's Gemini API to produce your score, feedback, ATS match results and cover letters. We use the Gemini API under Google's **free-service terms**. Under those terms, Google may use content submitted to the service, and human reviewers may read it, to provide, improve and develop Google products and machine-learning technologies. Because of this, you should not upload anything you are not comfortable sharing under those terms. See [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms) and [Google's Privacy Policy](https://policies.google.com/privacy).
 
-- No advertising SDKs. The app shows no ads.
-- No analytics or tracking SDKs (such as Firebase Analytics, PostHog or Mixpanel).
-- No crash-reporting SDKs (such as Sentry or Bugsnag). Google Play itself may give us anonymous crash and performance statistics through Android vitals.
-- No location data.
-- No contacts, SMS or call logs.
-- No microphone access.
-- No camera access, except when you choose to take a photo of a resume.
-- No clipboard monitoring. Job descriptions are only read when you paste them into the app.
-- No advertising ID.
+**Supabase (backend).** Our authentication, database and server functions are provided by Supabase. The data listed in 1.3 is stored in our Supabase project. See [Supabase's Privacy Policy](https://supabase.com/privacy).
 
-## 4. How we use information
+**Google Sign-In.** Used to identify you, as described in 1.2. See [Google's Privacy Policy](https://policies.google.com/privacy).
 
-We use your information only to:
+**Google Play Billing.** Crux Pro subscriptions are bought, billed, renewed and cancelled through Google Play. Google handles your payment details; we never see your card or bank information. We receive only the purchase information in 1.3. You can manage or cancel your subscription at any time in Google Play (Play Store, Payments & subscriptions, Subscriptions) or from **Settings, Manage subscription** in the app.
 
-- Sign you in and keep your session.
-- Analyze your resume and show you scores, feedback and suggestions.
-- Check ATS formatting, match your resume to a job description, and generate cover letters.
-- Show your past results to you.
-- Enforce the 3 free action limit.
-- Verify and manage Crux Pro subscriptions, including restoring purchases after reinstalling the app or changing phones.
-- Respond to support, access and deletion requests.
-- Protect the service from abuse and fraud, and meet legal and tax obligations.
+**Firebase Analytics (optional, off until you allow it).** If you tap "Allow" on the first-run notice (or turn on **Settings, Help improve Crux**), Crux uses Google Firebase Analytics to measure how the app is used, for example which screens are reached, whether an analysis succeeded or failed, and which paywall was shown. Firebase collects app-activity events, basic device and app information (model, OS version, app version, country, language) and an app-instance identifier. Events never include your resume, name, email address, file names or job descriptions; file details are reduced to broad categories such as file type and a size range. Advertising ID collection and ad personalization are disabled. Until you allow it, nothing is sent, and you can turn it off at any time in Settings. Turning it off stops new data from being collected. Event data already collected is kept for up to 14 months and then deleted automatically; to ask us to delete it sooner, email us at the support address in this policy. See [Firebase privacy information](https://firebase.google.com/support/privacy).
 
-We do not use your resume or personal data for advertising. We do not use it to train our own AI models.
+Crux does not show advertisements and does not use any advertising SDK.
 
-## 5. How we share information
+---
 
-We do not sell your personal information. We do not share it for advertising. We share data only with the service providers below, which are needed to run the app.
+## 2. How We Use Your Information
 
-| Provider | What they do | Data involved | Privacy policy |
-|---|---|---|---|
-| **Supabase** | Authentication, database, server functions | Account details, results, quota, subscription records, uploaded resume content while it is processed | https://supabase.com/privacy |
-| **Google (Gemini API)** | AI analysis of resume content, job descriptions and cover letter requests | Resume content and job descriptions | https://policies.google.com/privacy |
-| **Google (Sign-In)** | Login | Google account details | https://policies.google.com/privacy |
-| **Google Play (Billing)** | Payments and subscription management | Purchase tokens, subscription state | https://policies.google.com/privacy |
+We use the information collected to:
+- Provide the resume analysis, ATS check and cover letter features
+- Enforce the free allowance and unlock Crux Pro for subscribers
+- Verify and restore your subscription
+- Diagnose errors and improve app performance
+- Comply with legal obligations
 
-**Important note about Gemini.** We use the free tier of the Google Gemini API. Under Google's terms for the free tier, content submitted may be used by Google to improve its products and services, and may be reviewed by human reviewers. Do not upload information you do not want processed this way. Google's handling of that data is described in its own terms and privacy policy, linked above.
+We do **not** sell your personal information.
 
-We may also disclose information if the law requires it, to respond to valid legal requests, or to protect our rights, users or the service.
+---
 
-## 6. Data retention
+## 3. Data Sharing
 
-| Data | How long we keep it |
-|---|---|
-| Original resume files (PDF, Word, text, photo) | Not kept. Used to produce your result, then discarded. |
-| Text extracted from resumes, job descriptions, analysis results, cover letters | While your account exists. Deleted when your account is deleted. |
-| Account details (name, email, Google ID, photo URL) | While your account exists. |
-| Free action counter | While your account exists. |
-| Subscription and purchase records | Up to 7 years, for financial and tax compliance. After you delete your account, we keep only what is needed for this purpose and remove the link to your name and email where possible. |
-| Server logs | Kept by Supabase for its standard log period. |
-| Data held by Google (Gemini, Sign-In, Play) | Governed by Google's own policies. |
+We share data only with the service providers listed in section 1.5 (Google Gemini API, Supabase, Google Sign-In, Google Play and, only if you allow it, Google Firebase Analytics), and only to the extent necessary to operate the app. We do not share your data with advertisers or data brokers.
 
-If you delete your account, we delete the data listed above except the subscription and legal records described in this section.
+---
 
-## 7. Your rights
+## 4. Data Retention
 
-You can ask us to:
+- **Uploaded resume files** are not retained by us after the result is produced. Google's retention of content sent to the Gemini API is governed by Google's terms (see 1.5).
+- **Account records on our server** (section 1.3) are kept while your account is active, until you ask us to delete them (see section 7).
+- **Data on your device** stays until you clear it (Settings, Clear cache) or uninstall the app.
 
-- **Access.** Send you a copy of the personal data we hold about you.
-- **Portability.** Provide that copy in a common, readable format.
-- **Correction.** Fix inaccurate data.
-- **Deletion.** Delete your account and associated data (see section 6 for what we must keep).
-- **Withdraw consent.** Stop using the app and cancel your subscription at any time. To cancel Pro, open Google Play, then Payments and subscriptions, then Subscriptions, and cancel Crux Pro. Cancelling does not delete your account.
+---
 
-To make a request, email **abdulmoizofficial07@gmail.com** from the address linked to your account. Use the subject line "Crux data request" or "Crux account deletion". We respond within 30 days. We may need to confirm your identity first.
+## 5. Children's Privacy
 
-**If you are in the EU/EEA or UK (GDPR).** We process your data to provide the service you asked for (contract), to verify subscriptions and meet tax laws (legal obligation), and to keep the service secure (legitimate interests). You can also object to or restrict processing, and complain to your local data protection authority.
+Crux is not directed to children under 13. We do not knowingly collect information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.
 
-**If you are in California (CCPA/CPRA).** You have the right to know, delete, correct, and opt out of the sale or sharing of personal information. We do not sell or share personal information as those terms are defined by California law. We will not discriminate against you for exercising your rights.
+---
 
-## 8. International transfers
+## 6. Security
 
-Our servers are provided by Supabase and are located in Singapore (AWS ap-southeast-1). Google processes data in the countries where it operates, including the United States. This means your data may be processed outside your country. Where required, these providers rely on legal safeguards for transfers, such as standard contractual clauses.
+We take reasonable steps to protect your information. Communication between the app and our servers uses HTTPS encryption, and access to stored records is restricted to the signed-in owner of the account. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.
 
-## 9. Children's privacy
+---
 
-Crux is not directed at children under 13, and we do not knowingly collect their data. Signing in requires a Google account. If you believe a child has given us personal data, email us and we will delete it.
+## 7. Your Rights and Deleting Your Data
 
-## 10. Security
+You have the right to:
+- **Access** the data we hold about you
+- **Correct** it
+- **Delete** it
 
-- Data is encrypted in transit (HTTPS/TLS) between the app, our servers and the third parties above.
-- Data stored with Supabase is encrypted at rest.
-- Database access is restricted so that each user can read only their own records.
-- Subscription status and free action counts can only be changed by our server, not by the app.
-- Secret keys (the AI key and Google Play credentials) are stored on the server only and are never in the app.
+**To delete your data**, email us at the address below from the Google account you use with Crux, asking us to delete your account and all associated records (section 1.3). We will delete them and confirm by email. You can remove the history stored on your device at any time with **Settings, Clear cache**. Deleting your account does not cancel a Google Play subscription; cancel that in Google Play first (see 1.5).
 
-No system is perfectly secure. If a breach affects your data, we will notify you and the authorities as the law requires.
+Content already sent to Google's Gemini API is subject to Google's own retention and deletion practices, which we do not control.
 
-## 11. Changes to this policy
+---
 
-We may update this policy. The latest version is always available at this page and through Settings, then Privacy policy, in the app. The "Last updated" date at the top shows when it last changed. If a change is material, we will say so in the app before it takes effect.
+## 8. EU/UK Users
 
-## 12. Contact us
+If you are located in the European Economic Area, the United Kingdom, or Switzerland, the General Data Protection Regulation (GDPR) and equivalent UK/Swiss laws apply. The legal basis for our processing of your data is:
+- **Contract**, to provide the service you requested (analysing your resume, running your subscription)
+- **Legitimate interest**, for app functionality, security and abuse prevention
+- **Consent**, for sending your resume to Google's Gemini AI, which you give when you choose to upload a file
 
-- Email: **abdulmoizofficial07@gmail.com**
-- Developer: Qwark (publisher of Crux: AI Resume Checker on Google Play)
-- Source repository: https://github.com/AbdulMoizOfficial0/ResumeChecker
+You may withdraw consent by not uploading files and by asking us to delete your data.
+
+---
+
+## 9. Changes to This Policy
+
+We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent revision. Material changes will be notified within the app.
+
+---
+
+## 10. Contact
+
+If you have questions about this Privacy Policy or our data practices, or want to request deletion, contact us at:
+
+**Email:** abdulmoizofficial07@gmail.com
+
+---
+
+*This policy applies to Crux only and not to any third-party services we link to.*
